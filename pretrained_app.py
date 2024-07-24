@@ -6,14 +6,6 @@ from mmocr.apis import TextDetInferencer, TextRecInferencer
 from spellchecker import SpellChecker
 import os
 
-DBNETPP_IC15 = {
-    "config": "/configs/textdet/dbnetpp/dbnetpp_resnet50-dcnv2_fpnc_1200e_icdar2015.py",
-}
-
-SVTR_SYNTH = {
-    "config": "/configs/textrecog/svtr/svtr-base_20e_st_mj.py",
-}
-
 def organize_points(rect):
     """
     Sort 4 vertices polygon into the same order
